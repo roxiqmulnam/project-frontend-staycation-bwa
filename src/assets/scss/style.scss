@@ -6,6 +6,7 @@
  */
 
  @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap");
+ @import "colorVariables";
  @import "functions";
  @import "variables";
  @import "mixins";
@@ -15,6 +16,7 @@
  @import "images";
  @import "code";
  @import "grid";
+ @import "container-grid";
  @import "tables";
  @import "forms";
  @import "buttons";
