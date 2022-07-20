@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import { Link } from "react-router-dom";
 import propTypes from "prop-types";
@@ -34,7 +35,6 @@ export default function Button(props) {
   if (props.type === "link") {
     if (props.isExternal) {
       return (
-        // eslint-disable-next-line react/jsx-no-target-blank
         <a
           href={props.href}
           className={className.join(" ")}

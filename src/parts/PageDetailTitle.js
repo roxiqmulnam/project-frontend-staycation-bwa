@@ -1,11 +1,11 @@
 import React from "react";
 
+
 import Breadcrumb from "elements/Breadcrumb";
 
 export default function PageDetailTitle({ data, breadcrumb }) {
   return (
     <section className="container spacing-sm">
-
         <div className="row align-items-center">
           <div className="col">
             <Breadcrumb data={breadcrumb} />
@@ -18,6 +18,7 @@ export default function PageDetailTitle({ data, breadcrumb }) {
           </div>
           <div className="col"></div>
         </div>
+      
     </section>
   );
 }

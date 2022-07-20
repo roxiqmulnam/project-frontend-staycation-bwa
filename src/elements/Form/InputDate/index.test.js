@@ -1,9 +1,6 @@
-/* eslint-disable testing-library/no-node-access */
-/* eslint-disable testing-library/prefer-screen-queries */
-/* eslint-disable testing-library/no-container */
-
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
+import { screen } from "@testing-library/dom";
 import InputDate from "./index";
 
 class TestInput extends React.Component {
@@ -65,5 +62,3 @@ test("Should show date picker when click input field", () => {
 
   expect(datePickerWrapper).toBeInTheDocument();
 });
-
-

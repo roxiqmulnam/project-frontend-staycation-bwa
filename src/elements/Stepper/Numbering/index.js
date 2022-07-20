@@ -1,7 +1,5 @@
 import React from "react";
 
-import Fade from "react-reveal/Fade";
-
 import propTypes from "prop-types";
 
 import "./index.scss";
@@ -9,7 +7,6 @@ import "./index.scss";
 export default function Numbering({ style, className, data, current }) {
   const KeysOfData = Object.keys(data);
   return (
-    <Fade>
       <ol className={["stepper", className].join(" ")} style={style}>
         {KeysOfData.map((list, index) => {
           let isActive = list === current ? "active" : "";
@@ -25,7 +22,6 @@ export default function Numbering({ style, className, data, current }) {
           );
         })}
       </ol>
-    </Fade>
   );
 }
 

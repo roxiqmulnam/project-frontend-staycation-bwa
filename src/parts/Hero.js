@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import ImageHero from "assets/images/img-hero.jpg";
 import ImageHero_ from "assets/images/img-hero-frame.jpg";
 
@@ -103,5 +104,6 @@ export default function Hero(props) {
           </div>
         </div>
       </section>
+    
   );
 }

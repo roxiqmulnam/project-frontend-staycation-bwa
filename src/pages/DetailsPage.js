@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-
 import { connect } from "react-redux";
 
 import Header from "parts/Header";
 import PageDetailTitle from "parts/PageDetailTitle";
-import PageDetailDescription from "parts/PageDetailDescription";
 import FeaturedImage from "parts/FeaturedImage";
+import PageDetailDescription from "parts/PageDetailDescription";
 import BookingForm from "parts/BookingForm";
 import Activities from "parts/Activities";
 import Testimony from "parts/Testimony";

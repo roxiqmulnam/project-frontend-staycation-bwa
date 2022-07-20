@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Fade from "react-reveal/Fade";
 import { connect } from "react-redux";
 
 import Header from "parts/Header";
@@ -60,7 +59,6 @@ class Checkout extends Component {
     payload.append("accountHolder", data.bankHolder);
     payload.append("bankFrom", data.bankName);
     payload.append("image", data.proofPayment[0]);
-    // payload.append("bankId", checkout.bankId);
 
     this.props.submitBooking(payload).then(() => {
       nextStep();
@@ -70,7 +68,6 @@ class Checkout extends Component {
   render() {
     const { data } = this.state;
     const { checkout, page } = this.props;
-    console.log(page, data);
     if (!checkout)
       return (
         <div className="container">
@@ -150,7 +147,7 @@ class Checkout extends Component {
                     data.lastName !== "" &&
                     data.email !== "" &&
                     data.phone !== "" && (
-                      <Fade>
+
                         <Button
                           className="btn mb-3"
                           type="button"
@@ -161,7 +158,6 @@ class Checkout extends Component {
                         >
                           Continue to Book
                         </Button>
-                      </Fade>
                     )}
                   <Button
                     className="btn"
@@ -180,7 +176,6 @@ class Checkout extends Component {
                   {data.proofPayment !== "" &&
                     data.bankName !== "" &&
                     data.bankHolder !== "" && (
-                      <Fade>
                         <Button
                           className="btn mb-3"
                           type="button"
@@ -191,7 +186,6 @@ class Checkout extends Component {
                         >
                           Continue to Book
                         </Button>
-                      </Fade>
                     )}
                   <Button
                     className="btn"

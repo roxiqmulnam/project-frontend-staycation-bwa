@@ -1,7 +1,3 @@
-/* eslint-disable testing-library/no-node-access */
-/* eslint-disable testing-library/prefer-screen-queries */
-/* eslint-disable testing-library/no-container */
-
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import InputNumber from "./index";
@@ -49,4 +45,3 @@ test("Should not be able to change when reach max value", () => {
   fireEvent.change(input, { target: { value: 33 } });
   expect(input.value).toBe("");
 });
-
